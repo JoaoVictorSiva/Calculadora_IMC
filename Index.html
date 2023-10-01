@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora de IMC </title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <main id="container">
+        <section id="img">
+            <img src="img/undraw_healthy_habit_kwe6.svg" alt="imagem elustrativa">
+        </section>
+
+        <section id="calculator">
+            <form id="form" action="">
+                <h1 id="titulo">Calcula IMC</h1>
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em kg
+                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        <input type="number" id="peso" required>
+                        <span> Kg </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler"></i>
+                        <input type="number" id="altura" required>
+                        <span> M </span>
+                    </div>
+                </div>
+
+                <button type="submit" id="calcular">Calcular</button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu Imc</span>
+                    </div>
+                    <div id="descrição">
+                        <span></span>
+                    </div>
+                </div>
+                <div id="more-info">
+                    <a href="MINHA PICA">mais info fdp</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
