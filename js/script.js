@@ -1,19 +1,25 @@
 const form = document.getElementById('form');
 
+
 form.addEventListener('submit' ,function(event){
     event.preventDefault();
-
+    
     document.getElementById('infos').classList.remove('hidden');
     
-    const Peso = docoment.getElementById('peso').value;
-    const Altura = docoment.getElementById('altura').value;
+    var Peso = document.getElementById('peso').value;
+    var Altura = document.getElementById('altura').value;
+    //var res = Altura * Altura;
 
-    const bmi = (Peso / (Altura * Altura)).toFixed(2);
+    var bmi = (Peso / (Altura*Altura));
+    var bmiinput = document.querySelector("#bmi");
+    bmiinput.innerHTML = bmi;
 
     const value = document.getElementById('value');
     let descricao = ''
 
-    
+   console.log(Altura)
+   console.log(bmi);
+   console.log(Peso)
 
     
 })
