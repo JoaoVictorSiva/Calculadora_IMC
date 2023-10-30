@@ -12,7 +12,7 @@ form.addEventListener('submit' ,function(event){
 
     var bmi = (Peso / (Altura*Altura));
     var bmiinput = document.querySelector("#bmi");
-    bmiinput.innerHTML = bmi;
+    bmiinput.innerHTML = bmi.toFixed(2);
 
     const value = document.getElementById('value');
     let descricao = ''
