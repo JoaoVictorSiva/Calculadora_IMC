@@ -155,3 +155,18 @@ body {
 .hidden{
     display: none;
 }
+
+/*INICIO ESTILO DO GRAFICO*/
+
+.main {
+    width: 40%;
+    position:fixed;
+    margin-top: 28cm;
+    background-color: transparent;
+    color: #f8fafc;
+}
+
+#Grafico {
+    display: flex;
+    align-items: left;
+}

@@ -20,9 +20,9 @@ form.addEventListener('submit' ,function(event){
    console.log(Altura)
    console.log(bmi);
    console.log(Peso)
-})
 
-const contexto = document.getElementById('Grafico');
+
+   const contexto = document.getElementById('Grafico');
 
 const labels = [
 
@@ -52,3 +52,5 @@ const config = {
 }
 
 const Grafico = new Chart(contexto, config)
+})
+
