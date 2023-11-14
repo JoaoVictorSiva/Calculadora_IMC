@@ -20,6 +20,35 @@ form.addEventListener('submit' ,function(event){
    console.log(Altura)
    console.log(bmi);
    console.log(Peso)
-
-    
 })
+
+const contexto = document.getElementById('Grafico');
+
+const labels = [
+
+    '2017',
+    '2018',
+    '2019',
+    '2020',
+    '2021',
+    '2022',
+    '2023'
+]
+
+const data = {
+    labels,
+    datasets:[{
+        data:[251 , 214 , 201 , 254, 258, 245, 214],
+        label:"Progressão de custos"
+    }]
+}
+
+const config = {
+    type: 'line',
+    data,
+    options:{
+        responsive: true
+    }
+}
+
+const Grafico = new Chart(contexto, config)
