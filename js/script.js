@@ -2,14 +2,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('form');
     var arrayResult = [];
 
-    const contexto = document.getElementById('Grafico');
+    const contexto = document.getElementById('Grafico').getContext('2d');
     const labels = ['2017', '2018', '2019', '2020', '2021', '2022', '2023'];
-
+    
+    
     const data = {
         labels,
         datasets: [{
             data: arrayResult,
-            label: "Histórico de IMC"
+            label: "Histórico de IMC",
+            fill:true,
+            backgroundColor:'#32a852'
         }]
     }
 
@@ -17,7 +20,8 @@ document.addEventListener('DOMContentLoaded', function() {
         type: 'line',
         data,
         options: {
-            responsive: true
+            responsive: true,
+            radius:5
         }
     }
 
